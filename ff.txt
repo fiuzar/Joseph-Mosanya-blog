@@ -1,0 +1,78 @@
+// Replace 'YourNewSecretPassword' with the actual password you want to use
+// $my_real_password = 'Nnamdi$+@#Mosanya'; 
+
+// echo "<h3>Copy the long scrambled string below:</h3>";
+// echo "<p>" . password_hash($my_real_password, PASSWORD_DEFAULT) . "</p>";
+
+<section class="bg-white border-t border-b border-stone-200/60 py-16">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="font-serif text-xl font-normal text-brand-primary text-center mb-12">Core Editorial Pillars</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- PILLAR 1 -->
+                    <div class="bg-brand-bgLight rounded-2xl p-6 border border-stone-200/40 shadow-2xs">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-brand-accent font-bold text-sm mb-4">01</div>
+                        <h3 class="font-serif font-normal text-brand-primary text-base mb-2">Interdisciplinary Learning</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed font-light">
+                            Breaking down complex principles across business, spiritual devotion, and life guidelines into simple, highly accessible formats.
+                        </p>
+                    </div>
+
+                    <!-- PILLAR 2 -->
+                    <div class="bg-brand-bgLight rounded-2xl p-6 border border-stone-200/40 shadow-2xs">
+                        <div class="w-8 h-8 rounded-lg bg-stone-100 flex items-center justify-center text-stone-800 font-bold text-sm mb-4">02</div>
+                        <h3 class="font-serif font-normal text-brand-primary text-base mb-2">Moral Stewardship</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed font-light">
+                            Using literary narratives to protect core ethical truths, build up character, and inspire readers to live with service-minded purpose.
+                        </p>
+                    </div>
+
+                    <!-- PILLAR 3 -->
+                    <div class="bg-brand-bgLight rounded-2xl p-6 border border-stone-200/40 shadow-2xs">
+                        <div class="w-8 h-8 rounded-lg bg-amber-50 flex items-center justify-center text-amber-800 font-bold text-sm mb-4">03</div>
+                        <h3 class="font-serif font-normal text-brand-primary text-base mb-2">Refined Presentation</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed font-light">
+                            Crafting beautifully scannable digital layouts optimized specifically for unhurried, peaceful reading on modern mobile and web screens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- 3. THE THREE GUIDING PILLARS -->
+
+        <!-- 4. SOCIAL INTERACTION DIRECTORY -->
+        <section class="max-w-4xl mx-auto px-6 py-16 lg:py-24 text-center">
+            <h2 class="font-serif text-2xl font-normal text-brand-primary tracking-tight mb-3">Keep in Touch</h2>
+            <p class="text-stone-500 font-light max-w-xl mx-auto text-sm leading-relaxed mb-8">
+                I regular release dynamic updates on new eBook catalogs, editorial guidelines, and spiritual updates across open professional directories.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto font-sans text-xs font-semibold uppercase tracking-wider">
+                <!-- LINKEDIN LINK -->
+                <a href="#" class="flex items-center justify-between p-4 bg-white rounded-xl border border-stone-200/60 hover:border-brand-accent group shadow-2xs transition-all duration-200">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600 font-bold text-sm">in</div>
+                        <div class="text-left">
+                            <span class="block text-[9px] text-stone-400 font-medium">Professional Network</span>
+                            <span class="text-xs font-semibold text-brand-primary group-hover:text-brand-accent transition-colors">Connect on LinkedIn</span>
+                        </div>
+                    </div>
+                    <span class="text-stone-400 group-hover:text-brand-accent transform group-hover:translate-x-0.5 transition-all text-sm">&rarr;</span>
+                </a>
+
+                <!-- TWITTER LINK -->
+                <a href="#" class="flex items-center justify-between p-4 bg-white rounded-xl border border-stone-200/60 hover:border-brand-accent group shadow-2xs transition-all duration-200">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-lg bg-stone-900 flex items-center justify-center text-white font-black text-xs">X</div>
+                        <div class="text-left">
+                            <span class="block text-[9px] text-stone-400 font-medium">Platform Correspondence</span>
+                            <span class="text-xs font-semibold text-brand-primary group-hover:text-brand-accent transition-colors">Follow on Twitter</span>
+                        </div>
+                    </div>
+                    <span class="text-stone-400 group-hover:text-brand-accent transform group-hover:translate-x-0.5 transition-all text-sm">&rarr;</span>
+                </a>
+            </div>
+        </section>

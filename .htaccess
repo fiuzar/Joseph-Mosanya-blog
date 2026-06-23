@@ -1,0 +1,58 @@
+# -----------------------------------------------------------------------------
+# SECURITY & ACCESS CONTROLS
+# -----------------------------------------------------------------------------
+
+# Prevent directory listings across the site
+Options -Indexes
+
+# -----------------------------------------------------------------------------
+# EDITORIAL REWRITE ENGINE
+# -----------------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Clean post URLs: /post/your-slug -> post.php?slug=your-slug
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^post/([A-Za-z0-9-]+)/?$ post.php?id=$1 [L,QSA]
+
+    # Extensionless routing for existing PHP pages: /about -> about.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^/]+)/?$ $1.php [L]
+
+    # Uncomment to force HTTPS after SSL is installed
+    #RewriteCond %{HTTPS} off
+    #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# LITERARY ERROR HANDLING
+# -----------------------------------------------------------------------------
+
+ErrorDocument 404 /404.php
+
+# -----------------------------------------------------------------------------
+# ARCHIVE VELOCITY & PERFORMANCE (Caching & Compression)
+# -----------------------------------------------------------------------------
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/javascript application/json image/svg+xml application/xml
+</IfModule>
